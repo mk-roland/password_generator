@@ -40,7 +40,21 @@
     width: 100%;
     text-align: center;
     font-family: var(--roboto);
-    font-size: var( --subheadline-font-size);
-    font-weight: var(--subheadline-font-weight);
+    font-size: 15px;
+    font-weight: 200;
+}
+.container__error{
+   
+    height: 60px;
+    
+}
+.container__error span{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(var(--red-color));
+    display: inline-block;
+    text-align: center;
+    width: 90%;  
+    height: 100%;  
 }
 }

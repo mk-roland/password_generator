@@ -48,7 +48,7 @@
     padding: 0 5px;
     border: 1px solid rgb(var(--red-color));
     width: 90%;
-    height: 50px;
+    height: 60px;
     border-radius: 10px;
     position: relative;
 }
@@ -140,6 +140,7 @@ input[type="text"]:focus {
 }
 .btn{
     padding: 15px;
+    color: rgb(var(--secondary-color));
     width: 100%;
     border: none;
     background-color: rgb(var(--blue-color),0.8);
