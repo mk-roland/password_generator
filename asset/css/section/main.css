@@ -1,0 +1,152 @@
+.main,.main__hero,.hero__container,.container__result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+
+.container__result{
+   border: 1px solid rgb(var(--primary-color));
+   border-radius: 10px;
+    border-color: #86b7fe;
+    height: 50px;
+    width: 90%;
+}
+.result{
+    text-align: center;
+    font-family: var(--roboto);
+    font-size: var( --headline-font-size);
+    font-weight: var(--subheadline-font-weight);
+}
+
+.hero__container{
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    height: 600px;
+    width: 80%;
+    border: 1px solid rgb(var(--primary-color));
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+
+    transition: all 0.9s ease-in-out;
+}
+
+.hero__container:hover{
+     
+     transform: scale(1.05);
+      border-color: #86b7fe;
+}
+
+.container__error{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    padding: 0 5px;
+    border: 1px solid rgb(var(--red-color));
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+.container__error{
+    display: none;
+}
+.container__error span b{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+    font-size: var( --subheadline-font-size);
+    font-weight: var(--subheadline-font-weight);
+    transform: transform 0.5s ease-in-out;
+}
+
+.container__error span b:hover{
+    transform: scale(1.2);
+}
+.container__error span{
+    font-size: var( --subheadline-font-size);
+    font-weight: var(--subheadline-font-weight);
+    color: rgb(var(--red-color));
+    display: inline-block;
+    text-align: center;
+    width: 90%;    
+}
+
+.container__number{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 60px;
+    width: 90%;
+    padding: 5px;
+}
+#my_nbr{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    /* On applique la transition sur la bordure et l'ombre */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+    /* Style de base de ton input (exemple) */
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 10px;
+    outline: none; /* Supprime le contour noir/bleu par défaut du navigateur */
+}
+
+input[type="text"]:focus {
+    /* 1. La bordure s'éclaircit un peu (couleur bleue de Bootstrap) */
+    border-color: #86b7fe;
+    
+    /* 2. L'effet "halo" lumineux tout autour :
+       0 décalage X, 0 décalage Y, 4px de flou, 0.25rem d'étalement */
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); 
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__checks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width:90%;
+    padding: 10px;
+    justify-content: center;
+}
+.container__check-wrap{
+        display: flex;
+        gap: 10px;
+    }
+
+.container__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /*height: 40px;*/
+    padding: 5px;
+}
+.btn{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: rgb(var(--blue-color),0.8);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}

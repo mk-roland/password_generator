@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav__title">
+                <h1>Générateur de mot de passe</h1>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__hero">
+        
+            <div class="hero__container">
+                <div class="container__result">
+                    <div class="result"></div>
+                </div>
+                <div class="container__error">
+                    <div class="error__message"> <span>error</span> <span> <b>&times;</b> </span> </div>
+                </div>
+                <div class="container__number">
+                    <input type="text" name="number" id="my_nbr" placeholder="saisir un entier">
+                </div>
+                <!-- Les checkbox-->
+                <div class="container__checks">
+                    <!--checkbox majuscule-->
+                    <div class="container__check-wrap">
+                        <input type="checkbox" name="majuscule" id="maj" class="check">
+                        <label for="maj">majuscule</label>
+                    </div>
+                    <!--checkbox minuscule-->
+                    <div class="container__check-wrap">
+                        <input type="checkbox" name="majuscule" id="min" class="check">
+                        <label for="min">minuscule</label>
+                    </div>
+                    
+                    <!--checkbox nombre-->
+                    <div class="container__check-wrap">
+                        <input type="checkbox" name="majuscule" id="nbr" class="check">
+                        <label for="nbr">nombre</label>
+                    </div>
+                    <!--checkbox caractere speciaux-->
+                     <div class="container__check-wrap">
+                        <input type="checkbox" name="majuscule" id="car" class="check">
+                        <label for="car">caractere speciaux</label>
+                    </div>
+
+                </div>
+                <div class="container__btn">
+                    <button type="button" class="btn">valider</button>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+    <script src="asset/js/main.js"></script>
+</body>
+</html>
